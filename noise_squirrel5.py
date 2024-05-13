@@ -60,7 +60,7 @@ class noise_squirrel5:
         temp = noise_squirrel5.__convertToUInt32(input)
         
         #now scramble the bits
-        temp *= numpy.uint32(temp * noise_squirrel5.BIT_NOISE_1)
+        temp = numpy.uint32(temp * noise_squirrel5.BIT_NOISE_1)
         temp = numpy.uint32(temp + self.seed)
         temp = numpy.uint32(temp ^ (temp >> 9))
         temp = numpy.uint32(temp + noise_squirrel5.BIT_NOISE_2)
