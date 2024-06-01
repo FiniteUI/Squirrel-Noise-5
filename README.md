@@ -27,4 +27,6 @@ built in noise functions. Utilizing these, random values can be generated withou
 6. A function which returns a random normalized (0 - 1) float
 
 A new noise generator can be created initialized by importing the script into your existing project and using:
+```python
 ns = noise_squirrel5.noise_squirrel5(seed)
+```
